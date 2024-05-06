@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+/* Estilos para o cabeçalho */
+
+
+:root{
+  --font-titulo: verdana,sans-serif; 
+  --cor01:#dbd005;
+  --cor02:#504F37;
+  --cor03:#7A773D;
+}
+
+
+* {
+  margin: 0px;
+}
+
+.logo {
+  margin: 0;
+  font-family: var(--font-titulo)
+
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--cor01);
+  color: #ffffff;
+
+}
+
+
+main {
+  max-width: 950px;
+  margin: auto;
+  background-color: #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.264);
+  ;
+
+
+}
+
+
+
+main .products {
+
+  padding-left: 15px;
+
+
+}
+
+.main-nav {
+  display: contents;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main-nav a {
+  padding: 10px;
+  text-decoration: none;
+  color:#ffffff;
+  border-radius: 5px;
+  margin: 0px 15px 0px 15px;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  background-color: #504F37;
+}
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+
+}
+
+.search-bar input {
+
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.msg{
+  padding: 8px;
+  
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius:  4px;
+  cursor: pointer;
+  ;
+}
+
+
+
+/* Estilo dos produtos */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permitir que os produtos quebrem para a próxima linha */
+  gap: 20px;
+  /* Espaçamento entre os produtos */
+
+}
+
+/* Estilo individual dos produtos */
+.product {
+  width: calc(33.33% - 20px);
+  /* Definir a largura de cada produto */
+  /* Porcentagem menos o espaçamento desejado (20px) */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  /* Incluir padding e bordas na largura total */
+
+}
+
+/* Estilo para dispositivos móveis */
+
+
+
+img {
+  width: 100%;
+
+}
+
+
+.main-content {
+  display: flex;
+
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    /* Empilha os elementos verticalmente */
+    align-items: stretch;
+    /* Estica os elementos para preencher a largura */
+  }
+
+  .main-nav {
+    margin-top: 10px;
+    /* Adiciona um espaço entre a barra de pesquisa e a navegação */
+  }
+
+  .search-bar {
+    max-width: 150px;
+    /* Adiciona um espaço entre o título da loja e a barra de pesquisa */
+  }
+
+  .search-bar button {
+    border-radius: 4px;
+    /* Torna o botão de pesquisa igualmente arredondado em dispositivos móveis */
+    margin-top: 5px;
+    /* Adiciona um espaço entre o campo de pesquisa e o botão em dispositivos móveis */
+    margin: auto;
+
+  }
+
+  .main-nav {
+    flex-direction: column;
+    /* Empilha os links verticalmente */
+  }
+
+  .main-nav a {
+    margin: 5px 0;
+    /* Adiciona um espaço entre os links 
+      */
+    padding: 10px;
+    text-align: center;
+    /* Centraliza o texto dos links */
+  }
+
+  .product {
+    .main-content {
+      display: flex;
+    }
+  }
+
+  .product {
+    width: calc(50% - 20px);
+    /* 2 produtos por linha em dispositivos móveis */
+
+
+
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  
+
+}
+
+
+.footer {
+  background-color: var(--cor03);
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+
+}
+
+.footer-section p {
+  margin: auto;
+  text-align: justify;
+  text-indent: 30px;
+  width: 450px;
+  font-weight: normal;
+
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  
+}
+
+
+
+
+
+
+
+
+/*main*/
+
+
+
+
+
+/* Estilo individual dos produtos */
